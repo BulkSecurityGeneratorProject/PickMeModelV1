@@ -1,0 +1,20 @@
+version: '2'
+services:
+    pickmemodelv1-app:
+        image: pickmemodelv1
+        environment:
+            # - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://pickmemodelv1-mysql:3306/pickmemodelv1?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_JEST_URI=http://pickmemodelv1-elasticsearch:9200
+        ports:
+            - 8080:8080
+    pickmemodelv1-mysql:
+        extends:
+            file: mysql.yml
+            service: pickmemodelv1-mysql
+    pickmemodelv1-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: pickmemodelv1-elasticsearch

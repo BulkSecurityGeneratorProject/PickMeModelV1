@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "PickMeModelV1",
+    "packageName": "io.github.jhipster.application",
+    "packageFolder": "io/github/jhipster/application",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "pl",
+    "languages": [
+      "en",
+      "de",
+      "ua",
+      "pl"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.4.2",
+    "jwtSecretKey": "MzA5OGVlMzg1YjM5YjE4ZDA5MGM1NzE3NWM3ODYxNDNiZWUzNjJhOTc1NTVhZGU5ZmE1YjNlNWQyZDI3NmFlZjQyNmM2ZjUzMGIyYzEwOWJlMWY2ODY1YTkxZTFhNTc4NTQ4MTk0NDkwZDVjNjlmMzM1Y2ExZDMyN2Y1ZmRkMGQ="
+  },
+  "git-provider": "GitHub",
+  "git-company": "KajuszZ",
+  "repository-name": "PickMeModelV1"
+}
